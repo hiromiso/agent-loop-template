@@ -1,6 +1,3 @@
-# Project-local data
-/data/
-
 # Databases
 *.sqlite
 *.sqlite-*
