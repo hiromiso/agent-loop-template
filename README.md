@@ -163,15 +163,24 @@ agentには、
 例えば以下のように依頼します。
 
 ```text
-AGENTS.md、SPEC.md、TASK.md、WORKFLOW.mdをすべて読み、
+/goal AGENTS.md、SPEC.md、TASK.md、WORKFLOW.mdをすべて読み、
 それらを正本としてこのプロジェクトを完成させてください。
 
-SPEC.mdを満たすために必要な作業をTASK.mdへ整理し、
-WORKFLOW.mdに従って実装、検証、レビュー、修正、
-commit、pushまで自律的に進めてください。
+まず現在のrepositoryの状態と仕様を確認し、
+SPEC.mdを満たすために必要な作業をTASK.mdへ整理してください。
 
-WORKFLOW.mdで定義された停止条件に到達するまで
-自律的に作業を継続してください。
+その後はWORKFLOW.mdに従い、
+実装、テスト、検証、独立レビュー、test gap analysis、必要な修正、
+TASK.mdの更新、commit、pushまで自律的に進めてください。
+
+各タスクの完了条件を実際の動作とテストで確認し、
+単にテストが通ったことだけを完成の根拠にしないでください。
+
+WORKFLOW.mdで定義された停止条件に到達するまで、
+人間への途中確認を求めず自律的に作業を継続してください。
+
+停止する場合は、AGENTS.mdおよびWORKFLOW.mdで定義された
+停止マーカーの形式を厳密に守ってください。
 ```
 
 利用しているagentに、
